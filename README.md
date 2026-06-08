@@ -1,114 +1,141 @@
+# GitHub Training
 
-
----
-
-````markdown
-# github_training
+> A beginner-friendly guide for setting up Git, GitHub, and VS Code on Windows.
 
 ---
 
-## HOW TO SETUP GITHUB for WINDOWS  
-*A super absolute beginner detailed guide*
+# HOW TO SETUP GITHUB FOR WINDOWS
+### A Super Absolute Beginner Detailed Guide
 
 ---
 
-## CONTENTS
-- Short Guide in English Only  
-- Detailed Guide in English (6 Steps)  
-- Detailed Guide in Arabic  
+# CONTENTS
+
+- Short Guide (English Only)
+- Detailed Guide (English)
+- الدليل التفصيلي (بالعربية)
 
 ---
 
-## SHORT GUIDE (ENGLISH ONLY)
+# SHORT GUIDE (ENGLISH ONLY)
 
-1. Install Git → [https://git-scm.com/downloads](https://git-scm.com/downloads)  
-2. Verify installation:
-   ```bash
-   git --version
-````
+### 1. Install Git
 
-3. Configure Git (first time only):
+Download Git:
 
-   ```bash
-   git config --global user.name "Your Name"
-   git config --global user.email "your-email@example.com"
-   ```
-4. Clone repository:
+https://git-scm.com/downloads
 
-   ```bash
-   git clone https://github.com/username/repository.git
-   cd repository
-   code .
-   ```
-5. Work with Git:
+### 2. Verify Installation
 
-   ```bash
-   git pull
-   git add .
-   git commit -m "your message"
-   git push
-   ```
+```bash
+git --version
+```
+
+### 3. Configure Git (First Time Only)
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+### 4. Clone Repository
+
+```bash
+git clone https://github.com/username/repository.git
+cd repository
+code .
+```
+
+### 5. Work with Git
+
+```bash
+git pull
+git add .
+git commit -m "your message"
+git push
+```
 
 ---
 
-## DETAILED GUIDE (ENGLISH)
+# DETAILED GUIDE (ENGLISH)
 
-### Step 0: Install Git
+## Step 0: Install Git
 
-Download via [https://git-scm.com/downloads](https://git-scm.com/downloads).
-*Note: On Windows, PATH is usually set automatically.*
+Download Git:
+
+https://git-scm.com/downloads
+
+> Note: On Windows, PATH is usually set automatically.
 
 ---
 
-### Step 1: Verify Git Installation
+## Step 1: Verify Git Installation
 
 1. Search for **Git Bash** on your laptop and open it.
 2. Run:
 
-   ```bash
-   git --version
-   ```
-3. Open VS Code Terminal (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\`</kbd>).
+```bash
+git --version
+```
+
+3. Open VS Code Terminal:
+
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>
+
 4. Run the same command:
 
-   ```bash
-   git --version
-   ```
+```bash
+git --version
+```
 
 If both show a version number → Git is installed correctly.
 
 ---
 
-### Step 2: Check Git PATHs
+## Step 2: Check Git PATHs
 
-#### In VS Code
+### In VS Code
 
-1. Go to **File → Preferences → Settings**.
-2. Search for `git.path`.
+1. Go to:
+
+   **File → Preferences → Settings**
+
+2. Search for:
+
+```text
+git.path
+```
+
 3. Either the path is set automatically, or you need to set it manually.
 
-   * Common paths for `git.exe`:
+Common paths for `git.exe`:
 
-     ```
-     C:\Program Files\Git\bin\git.exe
-     C:\Program Files\Git\cmd\git.exe
-     ```
+```text
+C:\Program Files\Git\bin\git.exe
+C:\Program Files\Git\cmd\git.exe
+```
 
-#### In Environment Variables
+### In Environment Variables
 
-1. Search **Edit system environment variables** in Windows.
-2. Open **PATH**.
+1. Search:
+
+   **Edit system environment variables**
+
+2. Open **PATH**
 3. Ensure a Git path is present.
 
 ---
 
-### Step 3: Install Git Extensions
+## Step 3: Install Git Extensions
 
-In VS Code, click on the **Extensions** button (left panel) and install Git-related extensions.
+In VS Code:
+
+1. Click the **Extensions** button (left panel).
+2. Install Git-related extensions.
 
 ---
 
-### Step 4: Configure Git (first time only)
+## Step 4: Configure Git (First Time Only)
 
 Set your name and email:
 
@@ -117,113 +144,135 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 ```
 
-#### Alternative (via Source Control in VS Code):
+### Alternative (via Source Control in VS Code)
 
 1. Open **Source Control** (left panel).
 2. Select **Clone Repositories**.
-3. Choose "Clone from GitHub".
+3. Choose **Clone from GitHub**.
 4. Browser will open and ask to link VS Code with GitHub → approve.
 5. Choose a folder (e.g., Desktop).
-6. Open the cloned repo in VS Code.
+6. Open the cloned repository in VS Code.
 
 ---
 
-### Step 5: Clone Repository (via Terminal)
+## Step 5: Clone Repository (via Terminal)
 
-1. Navigate to target folder:
+### Navigate to the Target Folder
 
-   ```bash
-   cd path/to/your/folder
-   ```
-2. Clone repo:
+```bash
+cd path/to/your/folder
+```
 
-   ```bash
-   git clone https://github.com/username/repository.git
-   ```
-3. Open project in VS Code:
+### Clone Repository
 
-   ```bash
-   cd repository
-   code .
-   ```
+```bash
+git clone https://github.com/username/repository.git
+```
 
----
+### Open Project in VS Code
 
-### Step 6: Pull and Push Changes
-
-* Pull latest changes:
-
-  ```bash
-  git pull
-  ```
-* Push your changes:
-
-  ```bash
-  git add .
-  git commit -m "your commit message"
-  git push
-  ```
+```bash
+cd repository
+code .
+```
 
 ---
 
-## الدليل التفصيلي (بالعربية)
+## Step 6: Pull and Push Changes
 
-### 0. تنزيل Git
+### Pull Latest Changes
 
-* الرابط: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-* ملاحظة: غالباً بيتسجّل الـPATH لحالو على Windows.
+```bash
+git pull
+```
+
+### Push Your Changes
+
+```bash
+git add .
+git commit -m "your commit message"
+git push
+```
 
 ---
 
-### 1. التحقق من تثبيت Git
+# الدليل التفصيلي (بالعربية)
+
+## 0. تنزيل Git
+
+الرابط:
+
+https://git-scm.com/downloads
+
+> ملاحظة: غالباً بيتسجّل الـ PATH لحالو على Windows.
+
+---
+
+## 1. التحقق من تثبيت Git
 
 1. دوّر على **Git Bash** بجهازك وشغّلو.
 2. اكتب:
 
-   ```bash
-   git --version
-   ```
-3. افتح تيرمينال VS Code (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\`</kbd>).
+```bash
+git --version
+```
+
+3. افتح تيرمينال VS Code:
+
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>
+
 4. اكتب نفس الأمر:
 
-   ```bash
-   git --version
-   ```
+```bash
+git --version
+```
 
-إذا ظهر رقم النسخة بالمرتين → Git شغّال.
+إذا ظهر رقم النسخة بالمرتين → Git شغّال بشكل صحيح.
 
 ---
 
-### 2. التحقق من مسارات Git (PATHs)
+## 2. التحقق من مسارات Git (PATHs)
 
-#### داخل VS Code
+### داخل VS Code
 
-1. من القائمة: **File → Preferences → Settings**.
-2. بالبحث اكتب: `git.path`.
+1. من القائمة:
+
+   **File → Preferences → Settings**
+
+2. بالبحث اكتب:
+
+```text
+git.path
+```
+
 3. إذا ما كان محدد تلقائياً، ضيفه إيدوي.
 
-   * مسارات شائعة:
+المسارات الشائعة:
 
-     ```
-     C:\Program Files\Git\bin\git.exe
-     C:\Program Files\Git\cmd\git.exe
-     ```
+```text
+C:\Program Files\Git\bin\git.exe
+C:\Program Files\Git\cmd\git.exe
+```
 
-#### داخل Environment Variables
+### داخل Environment Variables
 
-1. ابحث: **Edit system environment variables**.
-2. افتح **PATH**.
-3. لازم تلاقي مسار Git موجود.
+1. ابحث عن:
 
----
+   **Edit system environment variables**
 
-### 3. تثبيت إضافات Git في VS Code
-
-من زر **Extensions** (الشريط اليسار بـVS Code) نزّل إضافات Git.
+2. افتح **PATH**
+3. تأكد أن مسار Git موجود.
 
 ---
 
-### 4. تهيئة Git (أول مرة فقط)
+## 3. تثبيت إضافات Git في VS Code
+
+1. افتح **Extensions** من الشريط الجانبي.
+2. نزّل إضافات Git المناسبة.
+
+---
+
+## 4. تهيئة Git (أول مرة فقط)
 
 ضبّط الاسم والإيميل:
 
@@ -232,51 +281,54 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 ```
 
-#### الطريقة السهلة (من VS Code):
+### الطريقة السهلة (من VS Code)
 
 1. افتح **Source Control**.
 2. اختار **Clone Repositories**.
-3. رح يطلع خيار "Clone from GitHub".
+3. رح يطلع خيار **Clone from GitHub**.
 4. المتصفح رح يفتح ويطلب ربط VS Code مع GitHub → وافق.
-5. اختر مكان تنزّل فيه الريبو (مثلاً Desktop).
-6. افتح الملف بالمكان المحدد.
+5. اختر مكان تنزيل الريبو (مثلاً Desktop).
+6. افتح المشروع بعد التنزيل.
 
 ---
 
-### 5. استنساخ الريبو وفتحه من التيرمينال
+## 5. استنساخ الريبو وفتحه من التيرمينال
 
-1. روح للمكان يلي بدك تحمّل فيه المشروع:
+### الانتقال للمجلد المطلوب
 
-   ```bash
-   cd path/to/your/folder
-   ```
-2. نزّل الريبو (بدّل الرابط برابط فريقك):
+```bash
+cd path/to/your/folder
+```
 
-   ```bash
-   git clone https://github.com/username/repository.git
-   ```
-3. افتح المشروع:
+### تنزيل الريبو
 
-   ```bash
-   cd repository
-   code .
-   ```
+> بدّل الرابط برابط فريقك أو مشروعك.
+
+```bash
+git clone https://github.com/username/repository.git
+```
+
+### فتح المشروع
+
+```bash
+cd repository
+code .
+```
 
 ---
 
-### 6. سحب ودفع التغييرات
+## 6. سحب ودفع التغييرات
 
-* لسحب آخر تحديث:
+### سحب آخر التحديثات
 
-  ```bash
-  git pull
-  ```
-* لدفع تعديلاتك:
+```bash
+git pull
+```
 
-  ```bash
-  git add .
-  git commit -m "رسالة الكوميت"
-  git push
-  ```
+### رفع تعديلاتك
 
+```bash
+git add .
+git commit -m "رسالة الكوميت"
+git push
 ```
